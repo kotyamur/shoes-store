@@ -9,3 +9,21 @@
     --accent-color: #FFFFFF;
     --bg-btn-color: #8E32C6;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.title-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+.logo-text {
+    font-family: "PT Serif", serif;
+}
