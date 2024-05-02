@@ -52,6 +52,11 @@ body {
     background-color: var(--first-background-color);
 }
 
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 .header-nav {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -78,6 +83,11 @@ a.current {
 .reviews,
 .footer {
     background-color: var(--secondary-background-color);
+}
+
+.hero {
+    padding-top: 94px;
+    padding-bottom: 182px;
 }
 
 .hero-logo-text {
@@ -111,6 +121,11 @@ a.current {
 
 /* advantages */
 
+.advantages {
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
 .advantages-item {
     width: 240px;
     font-size: 36px;
@@ -118,6 +133,12 @@ a.current {
 }
 
 /* reviews */
+
+.reviews {
+    padding-top: 24px;
+    padding-bottom: 112px;
+}
+
 .reviews-title,
 .order-title {
     font-size: 48px;
@@ -144,6 +165,11 @@ a.current {
 }
 
 /* order */
+
+.order {
+    padding-top: 20px;
+    padding-bottom: 36px;
+}
 
 .order-form {
     width: 690px;
@@ -179,6 +205,12 @@ a.current {
 }
 
 /* footer */
+
+.footer {
+    padding-top: 44px;
+    padding-bottom: 28px;
+}
+
 
 .contacts-list {
     font-size: 24px;
