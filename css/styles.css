@@ -16,6 +16,7 @@ body {
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    background-color: #021635;
 }
 
 .title-font {
@@ -45,7 +46,7 @@ body {
     padding: 0 15px;
     margin-right: auto;
     margin-left: auto;
-    outline: 1px dashed #f44336;
+    /* outline: 1px dashed #f44336; */
 }
 
 .flex {
@@ -55,6 +56,9 @@ body {
 /* header */
 
 .header, .order {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--first-background-color);
 }
 
@@ -69,6 +73,7 @@ body {
 
 .header-nav {
     display: flex;
+    align-items: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 24px;
@@ -82,11 +87,16 @@ body {
 
 .switcher-list {
     display: flex;
+    align-items: center;
     gap: 28px;
     margin-left: auto;
     font-weight: 300;
     font-size: 24px;
     color: #dcdcdc;
+}
+
+.header a:hover {
+    color: var(--accent-color);
 }
 
 a.current {
@@ -100,12 +110,19 @@ a.current {
 .advantages,
 .reviews,
 .footer {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--secondary-background-color);
 }
 
 .hero {
     padding-top: 94px;
     padding-bottom: 182px;
+    background-image: url(../images/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-logo-text {
@@ -135,6 +152,10 @@ a.current {
 .advantages {
     padding-top: 105px;
     padding-bottom: 105px;
+    background-image: url(../images/bg-advantages.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .advantages-list {
@@ -144,11 +165,42 @@ a.current {
 }
 
 .advantages-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
     /* width: 240px; */
     padding: 0 50px;
     font-size: 36px;
     text-align: center;
+    letter-spacing: 0.04em;
+    word-spacing: 0.2em;
 }
+
+.advantages-item:nth-child(2) {
+    flex-direction: column-reverse;
+}
+
+.advantages-item::after {
+    content: "";
+    width: 240px;
+    height: 240px;
+    display: block;
+    background-image: url(../images/stars.svg);
+}
+
+.advantages-item:nth-child(1)::after {
+    background-image: url(../images/stars.svg);
+}
+
+.advantages-item:nth-child(2)::after {
+    background-image: url(../images/paints.svg);
+}
+
+.advantages-item:nth-child(3)::after {
+    background-image: url(../images/car.svg);
+}
+
 
 .advantages-item:not(:last-child) {
     border-right: 1px solid #fff;;
@@ -165,6 +217,10 @@ a.current {
     padding-bottom: 112px;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+    background-image: url(../images/reviews-flowers.png), url(../images/bg-reviews.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom, center;
+    background-size: 226px 380px, cover;
 }
 
 .reviews-title,
@@ -184,10 +240,18 @@ a.current {
 }
 
 .reviews-item {
+    display: flex;
+    flex-direction: column;
     width: 255px;
     padding: 48px 12px 28px 13px;
     border-radius: 15px;
     background-color: #8E32C6;
+}
+
+.reviews-item > div {
+    margin-top: auto;
+    display: flex;
+    gap: 4px;
 }
 
 .reviews-item:nth-child(1) {
@@ -235,6 +299,10 @@ a.current {
 .order {
     padding-top: 20px;
     padding-bottom: 36px;
+    background-image: url(../images/bg-order.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .order-title {
@@ -333,5 +401,22 @@ a.current {
 }
 
 .footer-logo-text {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 108px;
+    padding-top: 38px;
+    padding-right: 20px;
     font-size: 24px;
+}
+
+.footer-logo-text::before {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 12px;
+    display: inline-block;
+    width: 108px;
+    height: 81px;
+    background-image: url(../images/logo-footer.svg);
 }
