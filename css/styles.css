@@ -38,6 +38,14 @@ body {
     background-color: var(--bg-btn-color);
 }
 
+.container {
+    width: 1140px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+    outline: 1px dashed #f44336;
+}
+
 /* header */
 
 .header, .order {

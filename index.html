@@ -16,25 +16,28 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a href="./">logo</a>
-            <ul>
-                <li><a href="./" class="current">Main page</a></li>
-                <li><a href="./">Benefits</a></li>
-                <li><a href="#advantages">Advantages</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#order">Order</a></li>
+        <div class="container">
+            <nav class="header-nav">
+                <a href="./">logo</a>
+                <ul>
+                    <li><a href="./" class="current">Main page</a></li>
+                    <li><a href="./">Benefits</a></li>
+                    <li><a href="#advantages">Advantages</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#order">Order</a></li>
+                </ul>
+            </nav>
+            <ul class="switcher-list">
+                <li><a href="./">Ua</a></li>
+                <li><a href="./" class="current">Eng</a></li>
             </ul>
-        </nav>
-        <ul class="switcher-list">
-            <li><a href="./">Ua</a></li>
-            <li><a href="./" class="current">Eng</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <p class="logo-text hero-logo-text">С&amp;R</p>
+            <div class="container">
+                <p class="logo-text hero-logo-text">С&amp;R</p>
             <h1 class="hero-title title-font">ColoRawe</h1>
             <p class="hero-subtitle title-font">Your dream Nike</p>
             <p>On this site you can find custom Nike sneakers of your dreams. 
@@ -42,16 +45,20 @@
                 sneakers as we do.
                 Good luck finding your way in the world of custom sneakers.</p>
             <button type="button"  class="btn hero-btn">Buy my Nike</button>
+            </div>
         </section>
         <section class="advantages" id="advantages">
-            <ul>
-                <li class="title-font advantages-item">Premium Quality</li>
-                <li class="title-font advantages-item">Indelible paint</li>
-                <li class="title-font advantages-item">Fast shipping</li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li class="title-font advantages-item">Premium Quality</li>
+                    <li class="title-font advantages-item">Indelible paint</li>
+                    <li class="title-font advantages-item">Fast shipping</li>
+                </ul>
+            </div>
         </section>
         <section class="reviews" id="reviews">
-            <h2 class="title-font reviews-title">Reviews</h2>
+            <div class="container">
+                <h2 class="title-font reviews-title">Reviews</h2>
             <ul>
                 <li class="reviews-item">
                     <p class="reviews-text">Sneakers are very 
@@ -89,9 +96,11 @@
                     </div>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="order" id="order">
-            <h2 class="title-font order-title">Order</h2>
+            <div class="container">
+                <h2 class="title-font order-title">Order</h2>
             <form class="order-form">
                 <label>
                     <input type="email" name="user-email" placeholder="Write your email">
@@ -108,32 +117,35 @@
                 </label>
                 <button type="submit" class="btn order-btn">Order my Nike</button>
             </form>
+            </div>
         </section>
     </main>
     <footer class="footer"  id="contacts">
-        <ul class="contacts-list">
-            <li>
-                <p>Have a question?</p>
-                <p>
-                    <a href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a>
-                </p>
-            </li>
-            <li>
-                <p>Have a proposal for cooperation?</p>
-                <p>
-                    <a href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a>
-                </p>
-            </li>
-            <li>
-                <p>Advertising questions?</p>
-                <p>
-                    <a href="mailto:ColoRawe_Advertising@gmail.com">ColoRawe_Advertising@gmail.com</a>
-                </p>
-            </li>
-        </ul>
-        <div>
-            <p>2022 ColoRawe &commat;All rights reserved United States</p>
-            <p  class="logo-text footer-logo-text">С&amp;R</p>
+        <div class="container">
+            <ul class="contacts-list">
+                <li>
+                    <p>Have a question?</p>
+                    <p>
+                        <a href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a>
+                    </p>
+                </li>
+                <li>
+                    <p>Have a proposal for cooperation?</p>
+                    <p>
+                        <a href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a>
+                    </p>
+                </li>
+                <li>
+                    <p>Advertising questions?</p>
+                    <p>
+                        <a href="mailto:ColoRawe_Advertising@gmail.com">ColoRawe_Advertising@gmail.com</a>
+                    </p>
+                </li>
+            </ul>
+            <div>
+                <p>2022 ColoRawe &commat;All rights reserved United States</p>
+                <p  class="logo-text footer-logo-text">С&amp;R</p>
+            </div>
         </div>
     </footer>
 </body>
