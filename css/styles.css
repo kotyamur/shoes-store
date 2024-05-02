@@ -12,11 +12,8 @@
 
 body {
     font-family: "Roboto", sans-serif;
-}
-
-nav {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    color: var(--main-text-color);
+    font-size: 18px;
 }
 
 .title-font {
@@ -26,4 +23,164 @@ nav {
 
 .logo-text {
     font-family: "PT Serif", serif;
+}
+
+.btn {
+    min-width: 254px;
+    padding: 19px 60px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: var(--main-text-color);
+    background-color: var(--bg-btn-color);
+}
+
+/* header */
+
+.header, .order {
+    background-color: var(--first-background-color);
+}
+
+.header-nav {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--nav-text-color);
+}
+
+.switcher-list {
+    font-weight: 300;
+    font-size: 24px;
+    color: #dcdcdc;
+
+}
+
+a.current {
+    font-weight: 400;
+    color: var(--accent-color);
+}
+
+/* hero */
+
+.hero,
+.advantages,
+.reviews,
+.footer {
+    background-color: var(--secondary-background-color);
+}
+
+.hero-logo-text {
+    font-size: 48px;
+}
+
+.hero-title {
+    font-size: 144px;
+}
+
+.hero-subtitle {
+    font-size: 72px;
+}
+
+/* .hero-btn {
+    min-width: 254px;
+    padding: 19px 60px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: var(--main-text-color);
+    background-color: var(--bg-btn-color);
+} */
+
+.hero-btn:hover {
+    background-color: var(--first-background-color);
+}
+
+/* advantages */
+
+.advantages-item {
+    width: 240px;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* reviews */
+.reviews-title,
+.order-title {
+    font-size: 48px;
+    text-align: center;
+}
+
+.reviews-item p {
+    font-size: 14px;
+    color: #d8d8d8;
+}
+
+.reviews-item > .reviews-text {
+    font-size: 24px;
+    color: var(--main-text-color);
+}
+
+.reviews-author {
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.reviews-author + p {
+    font-size: 12px;
+}
+
+/* order */
+
+.order-form {
+    width: 690px;
+}
+
+.order-form input {
+    font-size: 24px;
+    color: var(--input-text-color);
+}
+.order-form input[type="email"] {
+    font-size: 28px;
+    color: var(--input-text-color);
+}
+
+.order-form .confirm-btn {
+    min-width: 110px;
+    padding: 4px 40px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-size: 28px;
+    color: #8d8d8d;
+}
+
+.order-form input::placeholder {
+    font-size: 24px;
+    color: var(--input-text-color);
+}
+
+.order-btn:hover {
+    background-color: var(--input-text-color);
+}
+
+/* footer */
+
+.contacts-list {
+    font-size: 24px;
+}
+
+.contacts-list a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.footer-logo-text {
+    font-size: 24px;
 }

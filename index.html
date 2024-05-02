@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShoesShop</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="header-nav">
             <a href="./">logo</a>
             <ul>
-                <li><a href="./">Main page</a></li>
+                <li><a href="./" class="current">Main page</a></li>
                 <li><a href="./">Benefits</a></li>
                 <li><a href="#advantages">Advantages</a></li>
                 <li><a href="#reviews">Reviews</a></li>
@@ -27,34 +27,34 @@
                 <li><a href="#order">Order</a></li>
             </ul>
         </nav>
-        <ul>
-            <li>Ua</li>
-            <li>Eng</li>
+        <ul class="switcher-list">
+            <li><a href="./">Ua</a></li>
+            <li><a href="./" class="current">Eng</a></li>
         </ul>
     </header>
     <main>
         <section class="hero">
-            <p>С&amp;R</p>
-            <h1>ColoRawe</h1>
-            <p>Your dream Nike</p>
+            <p class="logo-text hero-logo-text">С&amp;R</p>
+            <h1 class="hero-title title-font">ColoRawe</h1>
+            <p class="hero-subtitle title-font">Your dream Nike</p>
             <p>On this site you can find custom Nike sneakers of your dreams. 
                 The original company caт`t create such beautiful 
                 sneakers as we do.
                 Good luck finding your way in the world of custom sneakers.</p>
-            <button type="button">Buy my Nike</button>
+            <button type="button"  class="btn hero-btn">Buy my Nike</button>
         </section>
         <section class="advantages" id="advantages">
             <ul>
-                <li>Premium Quality</li>
-                <li>Indelible paint</li>
-                <li>Fast shipping</li>
+                <li class="title-font advantages-item">Premium Quality</li>
+                <li class="title-font advantages-item">Indelible paint</li>
+                <li class="title-font advantages-item">Fast shipping</li>
             </ul>
         </section>
         <section class="reviews" id="reviews">
-            <h2>Reviews</h2>
+            <h2 class="title-font reviews-title">Reviews</h2>
             <ul>
-                <li>
-                    <p>Sneakers are very 
+                <li class="reviews-item">
+                    <p class="reviews-text">Sneakers are very 
                         comfortable and well 
                         painted, nothing has 
                         worn off in a year.
@@ -62,40 +62,40 @@
                     <p>25.11</p>
                     <div>
                         <img src="">
-                        <h3>John Teylor</h3>
+                        <h3 class="reviews-author">John Teylor</h3>
                         <p>With us from 2018</p>
                     </div>
                 </li>
-                <li>
-                    <p>I'm very happy with this color scheme.
+                <li class="reviews-item">
+                    <p class="reviews-text">I'm very happy with this color scheme.
                         They match all my clothes.
                     </p>
                     <p>05.01</p>
                     <div>
                         <img src="">
-                        <h3>Elizabeth Garsia</h3>
+                        <h3 class="reviews-author">Elizabeth Garsia</h3>
                         <p>With us from 2020</p>
                     </div>
                 </li>
-                <li>
-                    <p>Just right if you need to go to a party.
+                <li class="reviews-item">
+                    <p class="reviews-text">Just right if you need to go to a party.
                         I use them actively, the paint is super.
                     </p>
                     <p>18.06</p>
                     <div>
                         <img src="">
-                        <h3>Tom Maquare</h3>
+                        <h3 class="reviews-author">Tom Maquare</h3>
                         <p>With us from 2019</p>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="order" id="order">
-            <h2>Order</h2>
-            <form>
+            <h2 class="title-font order-title">Order</h2>
+            <form class="order-form">
                 <label>
                     <input type="email" name="user-email" placeholder="Write your email">
-                    <button type="submit">Confirm </button>
+                    <button type="submit" class="confirm-btn">Confirm </button>
                 </label>
                 <label>
                     <input type="text" name="user-country" placeholder="Your Country">
@@ -106,12 +106,12 @@
                 <label>
                     <input type="text" name="user-adress" placeholder="Your Adress">
                 </label>
-                <button type="submit">Buy my Nike</button>
+                <button type="submit" class="btn order-btn">Order my Nike</button>
             </form>
         </section>
     </main>
-    <footer  id="contacts">
-        <ul>
+    <footer class="footer"  id="contacts">
+        <ul class="contacts-list">
             <li>
                 <p>Have a question?</p>
                 <p>
@@ -133,7 +133,7 @@
         </ul>
         <div>
             <p>2022 ColoRawe &commat;All rights reserved United States</p>
-            <p>С&amp;R</p>
+            <p  class="logo-text footer-logo-text">С&amp;R</p>
         </div>
     </footer>
 </body>
