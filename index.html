@@ -16,10 +16,10 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container flex">
             <nav class="header-nav">
-                <a href="./">logo</a>
-                <ul>
+                <a href="./"  class="header-logo">logo</a>
+                <ul  class="header-nav-list">
                     <li><a href="./" class="current">Main page</a></li>
                     <li><a href="./">Benefits</a></li>
                     <li><a href="#advantages">Advantages</a></li>
@@ -40,16 +40,16 @@
                 <p class="logo-text hero-logo-text">С&amp;R</p>
             <h1 class="hero-title title-font">ColoRawe</h1>
             <p class="hero-subtitle title-font">Your dream Nike</p>
-            <p>On this site you can find custom Nike sneakers of your dreams. 
+            <p class="hero-decription">On this site you can find custom Nike sneakers of your dreams. 
                 The original company caт`t create such beautiful 
-                sneakers as we do.
+                sneakers as we do.<br>
                 Good luck finding your way in the world of custom sneakers.</p>
             <button type="button"  class="btn hero-btn">Buy my Nike</button>
             </div>
         </section>
         <section class="advantages" id="advantages">
             <div class="container">
-                <ul>
+                <ul class="advantages-list">
                     <li class="title-font advantages-item">Premium Quality</li>
                     <li class="title-font advantages-item">Indelible paint</li>
                     <li class="title-font advantages-item">Fast shipping</li>
@@ -59,7 +59,7 @@
         <section class="reviews" id="reviews">
             <div class="container">
                 <h2 class="title-font reviews-title">Reviews</h2>
-            <ul>
+            <ul class="reviews-list">
                 <li class="reviews-item">
                     <p class="reviews-text">Sneakers are very 
                         comfortable and well 
@@ -102,7 +102,7 @@
             <div class="container">
                 <h2 class="title-font order-title">Order</h2>
             <form class="order-form">
-                <label>
+                <label class="email-label">
                     <input type="email" name="user-email" placeholder="Write your email">
                     <button type="submit" class="confirm-btn">Confirm </button>
                 </label>
@@ -142,8 +142,9 @@
                     </p>
                 </li>
             </ul>
-            <div>
-                <p>2022 ColoRawe &commat;All rights reserved United States</p>
+            <div class="footer-logo">
+                <p>2022 ColoRawe &commat;All rights reserved 
+                    <br> United States</p>
                 <p  class="logo-text footer-logo-text">С&amp;R</p>
             </div>
         </div>
