@@ -39,6 +39,7 @@ body {
     font-size: 24px;
     color: var(--main-text-color);
     background-color: var(--bg-btn-color);
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
 }
 
 .container {
@@ -95,6 +96,10 @@ body {
     color: #dcdcdc;
 }
 
+.header a {
+    transition: color 500ms ease-in-out;
+}
+
 .header a:hover {
     color: var(--accent-color);
 }
@@ -144,7 +149,7 @@ a.current {
 }
 
 .hero-btn:hover {
-    background-color: var(--first-background-color);
+    background-color: #5d1789;
 }
 
 /* advantages */
@@ -362,7 +367,7 @@ a.current {
 }
 
 .order-btn:hover {
-    background-color: var(--input-text-color);
+    background-color: #5d1789;
 }
 
 /* footer */
